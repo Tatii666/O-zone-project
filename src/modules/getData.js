@@ -1,5 +1,7 @@
-const getData = () => {
-    return fetch('https://o-zone-9e888-default-rtdb.firebaseio.com/goods.json')
+const getData = (str) => {
+    return fetch(
+            `https://o-zone-9e888-default-rtdb.firebaseio.com/goods.json`
+        )
         .then((res) => {
             return res.json()
         })
